@@ -22,7 +22,7 @@ const InputFields = props => {
           </Button>
         )}
       </Flex>
-      <Heading my={3} as="h4" size="lg">
+      <Heading color="cyan.500" my={5} as="h4" size="lg">
         {props.firstName} {props.lastName}
       </Heading>
       {/* input fields value are dependent on props passed in. along with the update function for each */}

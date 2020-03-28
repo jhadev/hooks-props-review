@@ -5,7 +5,7 @@ const ToggleColorMode = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <header>
-      <Button size="sm" mr={2} onClick={toggleColorMode}>
+      <Button size="sm" m={3} onClick={toggleColorMode}>
         {colorMode === 'light' ? <Icon name="moon" /> : <Icon name="sun" />}
       </Button>
     </header>
