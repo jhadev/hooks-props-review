@@ -9,17 +9,20 @@ const App = () => {
   return (
     <ColorMode>
       <CSSReset />
+      <ToggleColorMode />
       <Flex my={5} flexDirection="row" justify="center">
-        <Stack spacing={2} mr={4}>
-          <Flex align="center">
-            <ToggleColorMode />
-            <Heading ml={2} mb={2} as="h1" size="2xl">
-              Hooks and Props
-            </Heading>
-          </Flex>
+        <Stack width="40%" spacing={2} mr={4}>
+          <Heading
+            color="cyan.500"
+            mb={2}
+            as="h1"
+            textAlign="center"
+            fontSize={60}>
+            Hooks and Props
+          </Heading>
           <Info />
         </Stack>
-        <Stack spacing={2}>
+        <Stack width="20%" spacing={2}>
           <Parent />
         </Stack>
       </Flex>
