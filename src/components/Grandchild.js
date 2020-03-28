@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from './Layout';
+import InputFields from './InputFields';
 
 const Grandchild = props => {
   const [grandChildFirstName, setGrandChildFirstName] = useState('');
@@ -14,7 +14,7 @@ const Grandchild = props => {
   return (
     <div>
       {props.childLastName && (
-        <Layout
+        <InputFields
           header="Grandchild"
           firstName={grandChildFirstName}
           lastName={grandChildLastName}
