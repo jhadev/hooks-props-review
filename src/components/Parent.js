@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Layout from './Layout';
+import InputFields from './InputFields';
 import Child from './Child';
 
 const Parent = props => {
@@ -8,7 +8,7 @@ const Parent = props => {
 
   return (
     <div>
-      <Layout
+      <InputFields
         header="Parent"
         firstName={parentFirstName}
         lastName={parentLastName}
