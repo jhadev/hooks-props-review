@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Input, Heading, Stack } from '@chakra-ui/core';
+import Layout from './Layout';
 import Grandchild from './Grandchild';
 
 const Child = props => {
@@ -14,23 +14,12 @@ const Child = props => {
 
   return (
     <div>
-      <Heading my={3} as="h2" size="md">
-        Child
-      </Heading>
-      <Heading my={2} as="h4" size="md">
-        {childFirstName} {childLastName}
-      </Heading>
-      <Input
-        my={2}
-        placeholder="child first name"
-        size="lg"
-        onChange={e => setChildFirstName(e.target.value)}
-      />
-      <Input
-        my={2}
-        placeholder="child last name"
-        size="lg"
-        onChange={e => setChildLastName(e.target.value)}
+      <Layout
+        header="Child"
+        firstName={childFirstName}
+        lastName={childLastName}
+        setFirstName={setChildFirstName}
+        setLastName={setChildLastName}
       />
       <Grandchild
         childLastName={childLastName}
