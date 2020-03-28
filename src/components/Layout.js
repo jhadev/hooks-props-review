@@ -2,6 +2,14 @@ import React from 'react';
 import { Input, Heading, Button, Flex } from '@chakra-ui/core';
 
 const Layout = props => {
+  // const disableInput = () => {
+  //   if (props.disable) {
+  //     if (props.firstName === '' || props.lastName === '') {
+  //       return true;
+  //     }
+  //     return false;
+  //   }
+  // };
   return (
     <>
       <Flex align="center">

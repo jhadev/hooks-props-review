@@ -13,13 +13,15 @@ const Grandchild = props => {
 
   return (
     <div>
-      <Layout
-        header="Grandchild"
-        firstName={grandChildFirstName}
-        lastName={grandChildLastName}
-        setFirstName={setGrandChildFirstName}
-        setLastName={setGrandChildLastName}
-      />
+      {props.childLastName && (
+        <Layout
+          header="Grandchild"
+          firstName={grandChildFirstName}
+          lastName={grandChildLastName}
+          setFirstName={setGrandChildFirstName}
+          setLastName={setGrandChildLastName}
+        />
+      )}
     </div>
   );
 };

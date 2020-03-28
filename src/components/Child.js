@@ -14,17 +14,21 @@ const Child = props => {
 
   return (
     <div>
-      <Layout
-        header="Child"
-        firstName={childFirstName}
-        lastName={childLastName}
-        setFirstName={setChildFirstName}
-        setLastName={setChildLastName}
-      />
-      <Grandchild
-        childLastName={childLastName}
-        setChildLastName={setChildLastName}
-      />
+      {props.parentLastName && (
+        <>
+          <Layout
+            header="Child"
+            firstName={childFirstName}
+            lastName={childLastName}
+            setFirstName={setChildFirstName}
+            setLastName={setChildLastName}
+          />
+          <Grandchild
+            childLastName={childLastName}
+            setChildLastName={setChildLastName}
+          />
+        </>
+      )}
     </div>
   );
 };
