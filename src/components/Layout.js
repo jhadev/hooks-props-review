@@ -2,24 +2,17 @@ import React from 'react';
 import { Input, Heading, Button, Flex } from '@chakra-ui/core';
 
 const Layout = props => {
-  // const disableInput = () => {
-  //   if (props.disable) {
-  //     if (props.firstName === '' || props.lastName === '') {
-  //       return true;
-  //     }
-  //     return false;
-  //   }
-  // };
   return (
     <>
       <Flex align="center">
-        <Heading my={3} as="h2" size="md">
+        <Heading textShadow="md" my={3} as="h3" size="lg">
           {props.header}
         </Heading>
         <Button
           variantColor="red"
-          size="xs"
+          size="sm"
           ml="auto"
+          disabled={!props.firstName && !props.lastName}
           onClick={() => {
             props.setFirstName('');
             props.setLastName('');
@@ -27,7 +20,7 @@ const Layout = props => {
           Reset
         </Button>
       </Flex>
-      <Heading my={2} as="h4" size="md">
+      <Heading my={2} as="h4" size="lg">
         {props.firstName} {props.lastName}
       </Heading>
       <Input

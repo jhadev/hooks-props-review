@@ -11,19 +11,19 @@ const Info = () => {
       rounded="lg"
       overflow="hidden">
       <Stack spacing={6}>
-        <Text fontWeight="bold" fontSize="xl">
+        <Text fontWeight="bold" fontSize="2xl">
           This shows the flow of props and state from parent to child to
           grandchild.
         </Text>
-        <Text as="i" fontSize="md">
+        <Text as="i" fontSize="xl">
           If the parent's last name changes, it will be reflected in both the
           child and the grandchild.
         </Text>
-        <Text as="i" fontSize="md">
+        <Text as="i" fontSize="xl">
           If the child's last name changes it will be reflected in the
           grandchild but will not change the parent's last name.
         </Text>
-        <Text as="i" fontSize="md">
+        <Text as="i" fontSize="xl">
           If the grandchild's last name changes it will not change the child or
           the parent's last name.
         </Text>
