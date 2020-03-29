@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Box, Text } from '@chakra-ui/core';
+import { Stack, Box, Text, Link, Icon } from '@chakra-ui/core';
 // import our array of info props from info.js
 import info from '../utils/info';
 
@@ -23,6 +23,12 @@ const Info = () => {
             {text}
           </Text>
         ))}
+        <Link
+          color="cyan.500"
+          href="https://github.com/jhadev/hooks-props-review"
+          isExternal>
+          GitHub repo <Icon name="external-link" mx="2px" />
+        </Link>
       </Stack>
     </Box>
   );
