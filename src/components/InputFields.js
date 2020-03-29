@@ -1,11 +1,11 @@
 import React from 'react';
-import { Input, Heading, Button, Flex, Box } from '@chakra-ui/core';
+import { Input, Heading, Button, Flex } from '@chakra-ui/core';
 
 const InputFields = props => {
   return (
     <>
       <Flex align="center">
-        <Heading textAlign="center" mr={4} my={3} as="h3" size="xl">
+        <Heading textAlign="center" mr={4} my={[2, 2, 3]} as="h3" size="xl">
           {props.header}
         </Heading>
         {/* if there is both a firstName and lastName prop and they are truthy (!== '') render a reset button */}
@@ -22,7 +22,7 @@ const InputFields = props => {
           </Button>
         )}
       </Flex>
-      <Heading color="cyan.500" my={5} as="h4" size="lg">
+      <Heading color="cyan.500" my={[1, 3, 5]} as="h4" size="lg">
         {props.firstName} {props.lastName}
       </Heading>
       {/* input fields value are dependent on props passed in. along with the update function for each */}
