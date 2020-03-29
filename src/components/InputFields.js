@@ -20,11 +20,13 @@ const InputFields = props => {
     }
   };
 
+  // if animationDirection is 'in' return 'scale-in-center' if not return 'scale-out-center'
+  // this will set the class name to allow the component to animate in or out of view.
+  const animationClassName =
+    animationDirection === 'in' ? 'scale-in-center' : 'scale-out-center';
+
   return (
-    <div
-      className={
-        animationDirection === 'in' ? 'scale-in-center' : 'scale-out-center'
-      }>
+    <div className={animationClassName}>
       <Flex align="center">
         <Heading textAlign="center" mr={4} my={2} as="h3" size="xl">
           {props.header}

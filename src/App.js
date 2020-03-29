@@ -19,6 +19,11 @@ const App = () => {
       </Flex>
       <Box px={10} py={2}>
         <Flex justify="center">
+          {/* array as prop value refers to screen sizes
+            base width is 100%
+            480px screen width and up width = 80%
+            768px and up width = 30%
+          */}
           <Stack width={['100%', 0.8, 0.3]} spacing={3}>
             <Heading
               color="cyan.500"

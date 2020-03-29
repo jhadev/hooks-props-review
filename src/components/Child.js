@@ -15,7 +15,6 @@ const Child = props => {
     }
   }, [childFirstName, props.parentLastName]);
 
-  // only render this component on the page if props.parentLastName does not equal an empty string
   return (
     <>
       <InputFields
@@ -25,6 +24,7 @@ const Child = props => {
         setFirstName={setChildFirstName}
         setLastName={setChildLastName}
       />
+      {/* only render this component on the page if childLastName does not equal an empty string */}
       {childLastName && <Grandchild childLastName={childLastName} />}
     </>
   );

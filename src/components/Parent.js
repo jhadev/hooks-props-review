@@ -15,6 +15,7 @@ const Parent = props => {
         setFirstName={setParentFirstName}
         setLastName={setParentLastName}
       />
+      {/* only render this component on the page if parentLastName does not equal an empty string */}
       {parentLastName && <Child parentLastName={parentLastName} />}
     </div>
   );
