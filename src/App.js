@@ -2,8 +2,8 @@ import React from 'react';
 import { CSSReset, Stack, Heading, Flex, Box } from '@chakra-ui/core';
 import ColorMode from './components/ColorMode';
 import ToggleColorMode from './components/ToggleColorMode';
-// import Info from './components/Info';
-import InfoModal from './components/InfoModal';
+import Info from './components/Info';
+import ModalComp from './components/ModalComp';
 import Parent from './components/Parent';
 
 const App = () => {
@@ -12,7 +12,9 @@ const App = () => {
       <CSSReset />
       <Flex>
         <ToggleColorMode />
-        <InfoModal />
+        <ModalComp openButtonText="Show Info" header="Info">
+          <Info />
+        </ModalComp>
       </Flex>
       <Box px={10} py={2}>
         <Flex justify="center">

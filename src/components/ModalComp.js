@@ -11,26 +11,23 @@ import {
   ModalFooter,
   useDisclosure
 } from '@chakra-ui/core';
-import Info from './Info';
 
-const InfoModal = () => {
+const ModalComp = ({ header, openButtonText, closeButtonText, children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box width="100%">
       <Button size="sm" my={3} onClick={onOpen}>
-        Show Info
+        {openButtonText}
       </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Info</ModalHeader>
+          <ModalHeader>{header}</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
-            <Info />
-          </ModalBody>
+          <ModalBody>{children}</ModalBody>
           <ModalFooter>
             <Button variantColor="red" onClick={onClose}>
-              Close
+              {closeButtonText || 'Close'}
             </Button>
           </ModalFooter>
         </ModalContent>
@@ -39,4 +36,4 @@ const InfoModal = () => {
   );
 };
 
-export default InfoModal;
+export default ModalComp;
