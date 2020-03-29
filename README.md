@@ -26,4 +26,4 @@ useState, useEffect, props, .map, spread, component library (Chakra UI)
 
 [Robin Wieruch Blog](https://www.robinwieruch.de/blog) - Has insightful and easy to understand React articles and tutorials
 
-[Animasta](https://animista.net/) - Awesome pre made css animations
+[Animista](https://animista.net/) - Awesome pre made css animations
