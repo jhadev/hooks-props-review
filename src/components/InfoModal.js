@@ -16,7 +16,6 @@ import Info from './Info';
 const InfoModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    // <Flex justify="center">
     <Box width="100%">
       <Button size="sm" my={3} onClick={onOpen}>
         Show Info
@@ -37,7 +36,6 @@ const InfoModal = () => {
         </ModalContent>
       </Modal>
     </Box>
-    // </Flex>
   );
 };
 
