@@ -12,9 +12,8 @@ const Info = () => {
       borderWidth="1px"
       rounded="lg"
       mt={2}
-      mr={5}
       overflow="hidden">
-      <Stack spacing={12}>
+      <Stack spacing={4}>
         {/* map over info array, destructure text bc we don't need that as a direct prop bc it will be a child of the Text component
         
         ...props will have everything in that object other than text so we can pass all those keys/values (fontSize, fontWeight, etc. to the Text component without explicity writing them.)
