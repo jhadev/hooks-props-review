@@ -5,6 +5,7 @@ import ToggleColorMode from './components/ToggleColorMode';
 import Info from './components/Info';
 import ModalComp from './components/ModalComp';
 import Parent from './components/Parent';
+import './App.css';
 
 const App = () => {
   return (

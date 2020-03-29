@@ -25,3 +25,5 @@ useState, useEffect, props, .map, spread, component library (Chakra UI)
 [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/) - Dan Abramov's blog (Software Engineer at Facebook React Core Team, Co-author of Redux and Create React App)
 
 [Robin Wieruch Blog](https://www.robinwieruch.de/blog) - Has insightful and easy to understand React articles and tutorials
+
+[Animasta](https://animista.net/) - Awesome pre made css animations
