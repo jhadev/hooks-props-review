@@ -15,10 +15,7 @@ const Parent = props => {
         setFirstName={setParentFirstName}
         setLastName={setParentLastName}
       />
-      <Child
-        parentLastName={parentLastName}
-        setParentLastName={setParentLastName}
-      />
+      {parentLastName && <Child parentLastName={parentLastName} />}
     </div>
   );
 };

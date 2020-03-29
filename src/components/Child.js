@@ -17,23 +17,16 @@ const Child = props => {
 
   // only render this component on the page if props.parentLastName does not equal an empty string
   return (
-    <div>
-      {props.parentLastName && (
-        <>
-          <InputFields
-            header="Child"
-            firstName={childFirstName}
-            lastName={childLastName}
-            setFirstName={setChildFirstName}
-            setLastName={setChildLastName}
-          />
-          <Grandchild
-            childLastName={childLastName}
-            setChildLastName={setChildLastName}
-          />
-        </>
-      )}
-    </div>
+    <>
+      <InputFields
+        header="Child"
+        firstName={childFirstName}
+        lastName={childLastName}
+        setFirstName={setChildFirstName}
+        setLastName={setChildLastName}
+      />
+      {childLastName && <Grandchild childLastName={childLastName} />}
+    </>
   );
 };
 

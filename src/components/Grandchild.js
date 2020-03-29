@@ -12,17 +12,13 @@ const Grandchild = props => {
   }, [grandChildFirstName, props.childLastName]);
 
   return (
-    <div>
-      {props.childLastName && (
-        <InputFields
-          header="Grandchild"
-          firstName={grandChildFirstName}
-          lastName={grandChildLastName}
-          setFirstName={setGrandChildFirstName}
-          setLastName={setGrandChildLastName}
-        />
-      )}
-    </div>
+    <InputFields
+      header="Grandchild"
+      firstName={grandChildFirstName}
+      lastName={grandChildLastName}
+      setFirstName={setGrandChildFirstName}
+      setLastName={setGrandChildLastName}
+    />
   );
 };
 
